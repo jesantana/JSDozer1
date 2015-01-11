@@ -1,0 +1,21 @@
+{
+	"mapid":333,
+	"mapNombre":"Julio Enrique Santana Lora",
+	"mapRelated":[
+		"A",
+		"B",
+		"C"
+	],
+	"mapInternalA":{
+		"mapInternalA":"id1",
+		"mapInternalA1":{
+			"theMostInternal":4
+		}
+	},
+	"mapcompactA":{
+		"id":"fgfg",
+		"name":"gfdgfd"
+	},
+	"mapB":3424,
+	"mapC":23
+}

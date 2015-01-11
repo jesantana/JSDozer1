@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+  
+  <mapping map-id="mapToCMapping"  type="one-way">
+	  <class-a map-get-method="getValue">es.santescas.NestedAccessMap</class-a>
+	  <class-b>es.santescas.dto.C</class-b>
+	  <field>
+	  	<a key="mapC">this</a>
+	    <b>c</b>
+	  </field>
+	  <field>
+	  	<a key="this">this</a>
+	    <b>b</b>
+	    <a-hint>es.santescas.NestedAccessMap</a-hint>
+	    <b-hint>es.santescas.dto.B</b-hint>
+	  </field>
+</mapping> 
+  
+  <mapping type="one-way">
+	  <class-a map-get-method="getValue">es.santescas.NestedAccessMap</class-a>
+	  <class-b>es.santescas.dto.B</class-b>
+	  <field>
+	  	<a key="mapB">this</a>
+	    <b>b</b>
+	  </field>  
+</mapping> 
+       
+  <mapping  type="one-way">
+	  <class-a map-get-method="getValue">es.santescas.NestedAccessMap</class-a>
+	  <class-b>es.santescas.dto.A</class-b>
+	  <field>
+	  	<a key="mapid">this</a>
+	    <b>id</b>
+	  </field>  
+	  <field>
+	  	<a key="mapNombre">this</a>
+	    <b>name</b>
+	  </field>  
+	  <field>
+	  	<a key="mapRelated">this</a>
+	    <b>related</b>
+	  </field>
+	  <field>
+	    <a key="mapInternalA.mapInternalA">this</a>
+	    <b>internalA.internalA</b>
+	    <a-hint>java.lang.String</a-hint>
+	  </field> 
+	  <field>
+	    <a key="mapInternalA.mapInternalA1.theMostInternal">this</a>
+	    <b>internalA.internalA1.theMostInternal</b>
+	  </field>
+	  <field  map-id="CompactReaalyInternalA">
+	    <a key="mapcompactA">this</a>
+	    <b>compactA</b>
+	    <a-hint>java.util.Map</a-hint>
+    	<b-hint>es.santescas.dto.CompactInternalA</b-hint>
+	  </field>
+	 
+</mapping>    
+<mapping map-id="CompactReaalyInternalA"  type="one-way">
+	  <class-a>java.util.Map</class-a>
+	  <class-b>es.santescas.dto.CompactInternalA</class-b>
+	  <field>
+	  	<a key="id">this</a>
+	    <b>compactA</b>
+	  </field>  
+	  <field>
+	  	<a key="name">this</a>
+	    <b>compactIntA</b>
+	  </field>  
+</mapping> 
+<mapping map-id="CompactInternalA"  type="one-way">
+	  <class-a map-get-method="getValue">es.santescas.NestedAccessMap</class-a>
+	  <class-b>es.santescas.dto.CompactInternalA</class-b>
+	  <field>
+	  	<a key="mapcompactA.id">this</a>
+	    <b>compactA</b>
+	  </field>  
+	  <field>
+	  	<a key="mapcompactA.name">this</a>
+	    <b>compactIntA</b>
+	  </field>  
+</mapping>          
+
+ 
+
+</mappings> 
